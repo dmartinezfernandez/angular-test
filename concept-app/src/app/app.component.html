@@ -1,0 +1,7 @@
+<app-title [value]="'Hi!'" (clickEvent)="onClickEvent($event)"></app-title>
+({{count}})
+<p>Subscribe to an observable using the async pipe: {{ getSomeObservable() | async }}<br>
+    Subscribe to an observable manually: {{ someObservableValueManuallySubscribed }}<br>
+    Result of a promise: {{ somePromiseValue }}
+</p>
+<p appMyCustomDirective>A custom pipe: {{ 1234567890.123 | numberFormatPipe }}</p>
